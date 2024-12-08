@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamma</title>
+    <meta name="description" content="a simple & modern MySQL client for students and teachers.">
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <style>
+      .button-container {
+        display: flex;
+        gap: 0px; 
+        margin-top: 10px;
+      }
+
+      button {
+        padding: 10px 20px;
+        color: #ffffff;
+        background-color: #333333;
+        border: none;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #ffffff;
+        color: #000000;
+        box-shadow: 0 0 15px #ffffff, 0 0 30px #ffffff;
+        transform: translateY(-5px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <img src="icon.png" alt="Icon" class="sidebar-icon" />
+      <a href="/">Download</a>
+      <a href="/credits.html">Credits</a>
+      <a href="/license.html">License</a>
+      <a href="/help.html">Help</a>
+    </div>
+    <div class="main-content">
+      <h1>gamma</h1>
+      <p>a simple & modern MySQL client for students and teachers. download now <br>and visit the help page for admin access within the app.</p>
+      <div class="button-container">
+        <button onclick="downloadFile()">Download the latest version (Win x64/x86)</button>
+        <!-- <button onclick="fetchArchive()">Archive</button> -->
+      </div>
+      <ul id="archive-list"></ul>
+    </div>
+    <script>
+        function downloadFile() {
+            const fileUrl = '/path/to/your/file.ext';
+            const a = document.createElement('a');
+            a.href = fileUrl;
+            a.download = 'yourfile.ext'; 
+            a.click();
+        }
+
+        function fetchArchive() {
+            window.location.href = '/archive.html';
+        }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,221 @@
+/* General Styling */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+a {
+    color: #c3b2ff;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    color: #ffe389;
+    text-shadow: 0 0 10px #ffcc80;
+
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #1f1f1f;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.license-box {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    max-width: 80%;
+    text-align: left;
+    margin: 0 auto;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1em;
+    overflow-x: auto; 
+}
+
+.license-box code {
+    white-space: pre-wrap; 
+    display: block;
+    line-height: 1.6;
+}
+
+.sidebar-icon {
+    width: 50px; 
+    height: 50px;
+    margin: 0 auto 20px auto; 
+    display: block;
+}
+.sidebar a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0 0 15px #ffffff, 0 0 30px #ffffff;
+    transform: scale(1.05);
+}
+
+.main-content {
+    margin-left: 100px; 
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    flex-direction: column; 
+    position: absolute; 
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #333333;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 0 0 15px #ffffff, 0 0 30px #ffffff;
+    transform: translateY(-5px);
+}
+
+footer {
+    background-color: #272727;
+    color: white;
+    text-align: center;
+    font-size: 11px;
+    padding: 1px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    font-size: 1em;
+    text-align: left;
+    width: 80%;  
+    color: #ffffff;
+    max-width: 800px;  
+    overflow-y: auto; 
+}
+
+li {
+    background-color: #1f1f1f;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #333333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    width: 400px;
+    max-width: 90%;
+    box-sizing: border-box;
+}
+
+form label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: left;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #333333;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: #00bcd4;
+    box-shadow: 0 0 15px #00bcd4, 0 0 30px #00bcd4;
+    transform: translateY(-5px);
+}
+
+/* use when archives are released */
+#archive-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#archive-list li {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #1f1f1f;
+    border-radius: 5px;
+}
